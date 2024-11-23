@@ -1,0 +1,91 @@
+@import '../../colors';
+
+.indonesia-features {
+  background: $bg-header;
+  padding: 40px 0 48px 0;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 56px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  &__card-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card-img {
+    border-radius: 10px;
+
+    @media screen and (max-width: 426px) {
+      width: 83.73vw;
+    }
+  }
+
+  &__card-title {
+    color: $neutral-white;
+
+    /* Mobile H1 */
+    font-family: "DM Sans";
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+
+    /* 115% */
+    @media screen and (max-width: 426px) {
+      font-size: 10.67vw;
+    }
+  }
+
+  &__card-descr {
+    width: 315px;
+
+    color: $text-lighten;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile Paragraph 1 */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.5px;
+  }
+
+  &__card-btn {
+    border-radius: 32px;
+    background: #DD2242;
+    height: 72px;
+    width: 100%;
+    border: none;
+  }
+  &__card-btn-txt {
+    color: $neutral-white;
+    text-align: center;
+
+    /* CTA */
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 27px */
+    transition: color 250ms linear;
+  }
+    &__card-btn:hover > &__card-btn-txt {
+      color: $btn-hover;
+    }
+}

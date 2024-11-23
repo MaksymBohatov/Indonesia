@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-container {
+  max-width: 426px;
+  padding: 0 30px;
+
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}

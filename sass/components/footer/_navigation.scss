@@ -1,0 +1,74 @@
+@import '../../colors';
+
+.navigation {
+  background: $footer-bg;
+  position: relative;
+  padding: 155px 0 84px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    gap: 36px;
+  }
+
+  &__logo-block {}
+
+  &__logo-link {}
+
+  &__links {
+    color: $neutral-white;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 22.943px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.689px;
+    /* 155.556% */
+    letter-spacing: 0.637px;
+  }
+
+  &__socmedia {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__socmedia-links {}
+
+  &__socmedia-img {
+    width: 30.987px;
+    height: 30.987px;
+  }
+
+  &__copyright {
+    color: $neutral-white;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "DM Sans";
+    font-size: 23.241px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36.152px;
+    /* 155.556% */
+    letter-spacing: 0.646px;
+  }
+
+}
+
+.scroll-to-up {
+  position: absolute;
+  top: -41px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__btn {
+    background: none;
+    border: none;
+  }
+
+  &__img {
+    width: 104px;
+    height: 104px;
+  }
+}

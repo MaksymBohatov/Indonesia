@@ -1,0 +1,94 @@
+@import '../../colors';
+
+.indonesia-values {
+  background: $dark-bg;
+  padding: 72px 0 70px 0;
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $neutral-white;
+    text-align: center;
+
+    /* Mobile H1 */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    /* 115% */
+    @media screen and (max-width: 426px) {
+        font-size: 10.67vw;
+        line-height: 12.27vw;
+      }
+  }
+
+  &__descr {
+    color: $text-lighten;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile Paragraph 1 */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.5px;
+
+    margin: 57px 0 15px 0;
+  }
+
+  &__txt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__txt-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__value {
+    color: $main-red;
+    text-align: center;
+
+    /* Mobile H1 */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    /* 115% */
+    @media screen and (max-width: 426px) {
+        font-size: 10.67vw;
+        line-height: 12.27vw;
+      }
+  }
+
+  &__txt-descr {
+    color: $text-lighten;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile Paragraph 1 */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.5px;
+  }
+}
+
+.indonesia-values__txt> :nth-child(1) {
+  margin-bottom: 80px;
+}
+
+.indonesia-values__txt> :nth-child(2) {
+  margin-bottom: 43px;
+}

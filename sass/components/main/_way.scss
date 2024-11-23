@@ -1,0 +1,120 @@
+@import '../../colors';
+
+.way {
+
+  background: $way-bg;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 29px 0 73px 0;
+
+    gap: 45px;
+  }
+
+  &__title {
+    color: $accent-titles;
+    text-align: center;
+
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+
+
+    @media screen and (max-width: 426px) {
+      font-size: 10.67vw;
+      line-height: 12.27vw;
+    }
+  }
+
+  &__trip-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__trip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__trip-title {
+    color: $accent-titles;
+    text-align: center;
+
+
+    font-family: "DM Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    margin: 18px 0 13px 0;
+  }
+
+  &__trip-descr {
+    color: $Light-Text;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile Paragraph 1 */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.5px;
+
+    margin: 0;
+  }
+
+  &__trip-show-more {
+    color: $main-red;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile Paragraph 1 */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  &__trip-video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__trip-video-block {
+    position: relative;
+  }
+
+  &__trip-video {
+    align-self: center;
+
+    @media screen and (max-width: 426px) {
+      width: 83.73vw;
+      height: 55.47vw;
+    }
+  }
+
+  &__trip-video-txt-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__trip-play-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

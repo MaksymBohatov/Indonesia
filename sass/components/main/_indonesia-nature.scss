@@ -1,0 +1,68 @@
+@import '../../colors';
+
+.indonesia-nature {
+  background: url(/images/mobile/lines-top.svg) left top no-repeat, url(/images/mobile/lines-bottom.svg) right bottom no-repeat;
+  background-size: 100% auto;
+  padding: 171px 0 116px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $strong-title-accent;
+    text-align: center;
+    /* Mobile H1 */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    
+    /* 115% */
+    @media screen and (max-width: 426px) {
+        font-size: 10.67vw;
+          line-height: 12.27vw;
+      }
+  }
+
+  &__descr {
+    color: $Paragraph-Dark;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Mobile Paragraph 1 */
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.5px;
+
+    margin: 36px 0 41px 0;
+  }
+
+  &__lernmore-btn {
+    border-radius: 122px;
+    background: $main-red;
+    border: none;
+    height: 73px;
+    width: 100%;
+  }
+
+  &__btn-txt {
+    color: $neutral-white;
+    text-align: center;
+
+    /* CTA */
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 27px */
+  }
+}
+
+.conrainer {}
