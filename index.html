@@ -30,6 +30,7 @@
           <div class="header-main__top-lines">
             <span class="header-main__slider-line"></span>
             <span class="header-main__slider-redline"></span>
+
           </div>
         </div>
       </div>
@@ -103,32 +104,40 @@
           <div class="indonesia-features__card">
             <picture>
               <source srcset="./images/mobile/walkways@mobile-1x.png 1x, ./images/mobile/walkways@mobile-2x.png 2x">
-              </source>
+              <source srcset="./images/desktop/walkways@desktop-1x.png 1x, ./images/desktop/walkways@desktop-2x.png 2x"
+                media="(min-width: 1024px)">
               <img src="./images/mobile/walkways@mobile-1x.png" alt="walkways" class="indonesia-features__card-img">
             </picture>
             <div class="indonesia-features__card-txt">
               <h3 class="indonesia-features__card-title">The walkways of Indonesia spellbind</h3>
               <p class="indonesia-features__card-descr">Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
                 commodo magna et libero mollis rhoncus.</p>
+
+              <button class="indonesia-features__card-btn">
+                <span class="indonesia-features__card-btn-txt">Learn More</span>
+              </button>
             </div>
-            <button class="indonesia-features__card-btn">
-              <span class="indonesia-features__card-btn-txt">Learn More</span>
-            </button>
           </div>
           <div class="indonesia-features__card">
             <picture>
+
               <source srcset="./images/mobile/beaches@mobile-1x.png 1x, ./images/mobile/beaches@mobile-2x.png 2x">
-              </source>
-              <img src="./images/mobile/beaches@mobile-1x.png" alt="beaches" class="indonesia-features__card-img">
+
+              <source srcset="./images/desktop/beaches@desktop-1x.png 1x, ./images/desktop/beaches@desktop-2x.png 2x"
+                media="(min-width: 1024px)">
+
+              <img src=" ./images/mobile/beaches@mobile-1x.png" alt="beaches"
+                class="indonesia-features__card-img indonesia-features__card-img--order">
             </picture>
-            <div class="indonesia-features__card-txt">
+            <div class="indonesia-features__card-txt indonesia-features__card-txt--order">
               <h3 class="indonesia-features__card-title">Perfect beaches exude relaxation and fun</h3>
               <p class="indonesia-features__card-descr">Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce
                 commodo magna et libero mollis rhoncus.</p>
+
+              <button class="indonesia-features__card-btn">
+                <span class="indonesia-features__card-btn-txt">Learn More</span>
+              </button>
             </div>
-            <button class="indonesia-features__card-btn">
-              <span class="indonesia-features__card-btn-txt">Learn More</span>
-            </button>
           </div>
         </div>
       </div>
@@ -154,6 +163,9 @@
                   <picture>
                     <source
                       srcset="./images/mobile/sand-beach@mobile-1x.png 1x, ./images/mobile/sand-beach@mobile-2x.png 2x">
+                    <source
+                      srcset="./images/desktop/island@desktop-1x.png 1x, ./images/desktop/island@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="./images/mobile/sand-beach@mobile-1x.png" class="indonesia-secrets__slider-img"
                       alt="sand beach">
                   </picture>
@@ -163,6 +175,9 @@
                   <picture>
                     <source
                       srcset="./images/mobile/sand-beach@mobile-1x.png 1x, ./images/mobile/sand-beach@mobile-2x.png 2x">
+                    <source
+                      srcset="./images/desktop/children@desktop-1x.png 1x, ./images/desktop/children@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="./images/mobile/sand-beach@mobile-1x.png" class="indonesia-secrets__slider-img"
                       alt="sand beach">
                   </picture>
@@ -172,6 +187,8 @@
                   <picture>
                     <source
                       srcset="./images/mobile/sand-beach@mobile-1x.png 1x, ./images/mobile/sand-beach@mobile-2x.png 2x">
+                    <source src="./images/desktop/swamp@desktop-1x.png 1x, ./images/desktop/swamp@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="./images/mobile/sand-beach@mobile-1x.png" class="indonesia-secrets__slider-img"
                       alt="sand beach">
                   </picture>
@@ -239,7 +256,13 @@
           <h3 class="indonesian-life__title">Live a life like you wouldn’t imagine, experience a life you wouldn’t
             expect.</h3>
           <div class="indonesian-life__video-block">
-            <img src="./images/mobile/indonesian-life.png" alt="video" class="indonesian-life__video">
+            <picture>
+              <source
+                srcset="./images/mobile/indonesian-life@mobile-1x.png 1x, ./images/mobile/indonesian-life@mobile-2x.png 2x">
+              <source
+                srcset="./images/desktop/indonesian-life@desktop-1x.png 1x, ./images/desktop/indonesian-life@desktop-2x.png 2x">
+              <img src="./images/mobile/indonesian-life@mobile-1x.png" alt="video" class="indonesian-life__video">
+            </picture>
             <img src="./images/play-btn-red.svg" alt="play" class="indonesian-life__video-play">
           </div>
           <div class="indonesian-life__video-content">
@@ -252,9 +275,12 @@
                 </picture>
                 <img src="/images/play-btn-simple.svg" alt="play" class="indonesian-life__play-btn">
               </div>
-              <h5 class="indonesian-life__video-title">In The Country</h5>
-              <p class="indonesian-life__video-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                dapibus mauris in lectus tempus.</p>
+              <div>
+                <h5 class="indonesian-life__video-title">In The Country</h5>
+                <p class="indonesian-life__video-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus
+                  dapibus mauris in lectus tempus.</p>
+              </div>
             </div>
             <div class="indonesian-life__video-content-item">
               <div class="indonesian-life__video-wrapper">
@@ -264,9 +290,12 @@
                 </picture>
                 <img src="/images/play-btn-simple.svg" alt="play" class="indonesian-life__play-btn">
               </div>
-              <h5 class="indonesian-life__video-title">In The City</h5>
-              <p class="indonesian-life__video-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                dapibus mauris in.</p>
+              <div>
+                <h5 class="indonesian-life__video-title">In The City</h5>
+                <p class="indonesian-life__video-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus
+                  dapibus mauris in.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -286,6 +315,8 @@
                 <div class="photo-gallery__photo-wrapper">
                   <picture>
                     <source srcset="images/mobile/woman@mobile-1x.png 1x, images/mobile/woman@mobile-2x.png 2x">
+                    <source srcset="/images/desktop/woman@desktop-1x.png 1x, /images/desktop/woman@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="/images/mobile/woman@mobile-1x.png" alt="woman"
                       class="photo-gallery__photo photo-gallery__photo-1">
                   </picture>
@@ -294,6 +325,9 @@
                   <picture>
                     <source
                       srcset="/images/mobile/nice-beach@mobile-1x.png 1x, /images/mobile/nice-beach@mobile-2x.png 2x">
+                    <source
+                      srcset="/images/desktop/nice-beach@desktop-1x.png 1x, /images/desktop/nice-beach@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="/images/mobile/nice-beach@mobile-1x.png" alt="nice-beach"
                       class="photo-gallery__photo photo-gallery__photo-2">
                   </picture>
@@ -304,6 +338,9 @@
                   <picture>
                     <source
                       srcset="/images/mobile/landscape@mobile-1x.png 1x, /images/mobile/landscape@mobile-2x.png 2x">
+                    <source
+                      srcset="images/desktop/landscape@desktop-1x.png 1x, images/desktop/landscape@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="/images/mobile/landscape@mobile-1x.png" alt="landscape"
                       class="photo-gallery__photo photo-gallery__photo-3">
                   </picture>
@@ -313,6 +350,9 @@
                   <picture>
                     <source
                       srcset="/images/mobile/mountains@mobile-1x.png 1x, /images/mobile/mountains@mobile-2x.png 2x">
+                    <source
+                      srcset="/images/desktop/mountains@desktop-1x.png 1x, /images/desktop/mountains@desktop-2x.png 2x"
+                      media="(min-width: 1024px)">
                     <img src="/images/mobile/mountains@mobile-1x.png" alt="landscape"
                       class="photo-gallery__photo photo-gallery__photo-4">
                   </picture>
@@ -323,6 +363,8 @@
               <div class="photo-gallery__photo-wrapper">
                 <picture>
                   <source srcset="/images/mobile/man@mobile-1x.png 1x, /images/mobile/man@mobile-2x.png 2x">
+                  <source srcset="/images/desktop/man@desktop-1x.png 1x, /images/desktop/man@desktop-2x.png 2x"
+                    media="(min-width: 1024px)">
                   <img src="/images/mobile/man@mobile-1x.png" alt="man"
                     class="photo-gallery__photo photo-gallery__photo-5">
                 </picture>
@@ -330,6 +372,7 @@
               <div class="photo-gallery__photo-wrapper">
                 <picture>
                   <source srcset="/images/mobile/fog@mobile-1x.png 1x, /images/mobile/fog@mobile-2x.png 2x">
+                  <source srcset="/images/desktop/fog@desktop-1x.png 1x, /images/desktop/fog@desktop-2x.png 2x">
                   <img src="/images/mobile/fog@mobile-1x.png" alt="fog"
                     class="photo-gallery__photo photo-gallery__photo-6">
                 </picture>
@@ -340,21 +383,37 @@
       </div>
     </section>
     <section class="way">
-      <div class="custom-container">
+      <div class="container">
         <div class="way__content">
           <h3 class="way__title">Getting there</h3>
           <div class="way__trip-wrapper">
             <div class="way__trip">
-              <img src="/images/circle-1.svg" alt="circle-1">
-              <h6 class="way__trip-title">Bookings your flights</h6>
-              <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
-              <a href="#" class="way__trip-show-more">Show more</a>
+              <img src="/images/circle-1.svg" alt="circle-1" class="way__trip-step-number">
+              <div class="way__trip-txt">
+                <h6 class="way__trip-title">Bookings your flights</h6>
+                <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
+                <p class="way__trip-descr-pc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus,
+                  eget tincidunt lacus
+                  varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor,
+                  lobortis enim.
+                </p>
+                <a href="#" class="way__trip-show-more">Show more</a>
+              </div>
             </div>
             <div class="way__trip">
-              <img src="/images/circle-2.svg" alt="">
-              <h6 class="way__trip-title">Bookings your flights</h6>
-              <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
-              <a href="#" class="way__trip-show-more">Show more</a>
+              <img src="/images/circle-2.svg" alt="circle-2" class="way__trip-step-number">
+              <div class="way__trip-txt">
+                <h6 class="way__trip-title">Choosing your hotel</h6>
+                <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
+                <p class="way__trip-descr-pc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus,
+                  eget tincidunt lacus
+                  varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor,
+                  lobortis enim.
+                </p>
+                <a href="#" class="way__trip-show-more">Show more</a>
+              </div>
             </div>
 
             <div class="way__trip-video-wrapper">
@@ -366,18 +425,33 @@
                 <img src="/images/play-btn-simple.svg" alt="circle-2" class="way__trip-play-video">
               </div>
               <div class="way__trip-video-txt-wrapper">
+                <h6 class="way__trip-title way__trip-title-pc">Travelling there</h6>
                 <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
+                <p class="way__trip-descr-pc way__trip-descr-pc--width">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Phasellus dapibus
+                  mauris in lectus tempus, eget tincidunt.</p>
                 <a href="#" class="way__trip-show-more">Show more</a>
               </div>
             </div>
 
             <div class="way__trip">
-              <img src="/images/circle-3.svg" alt="circle-3">
-              <h6 class="way__trip-title">Bookings your flights</h6>
-              <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
-              <a href="#" class="way__trip-show-more">Show more</a>
+              <img src="/images/circle-3.svg" alt="circle-3" class="way__trip-step-number">
+              <div class="way__trip-txt">
+                <h6 class="way__trip-title">Planning your experiences</h6>
+                <p class="way__trip-descr">Lorem ipsum dolor set,,,,</p>
+                <p class="way__trip-descr-pc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus
+                  mauris in lectus tempus, eget tincidunt lacus
+                  varius.</p>
+                <a href="#" class="way__trip-show-more">Show more</a>
+
+                <button class="way__trip-btn">
+                  <span class="way__trip-btn-txt">Learn More</span>
+                </button>
+
+              </div>
             </div>
           </div>
+          <span class="way__line"></span>
         </div>
       </div>
     </section>
@@ -389,22 +463,29 @@
       </div>
       <div class="custom-container">
         <div class="navigation__content">
-          <div class="navigation__logo-block"><a href="#" class="navigation__logo-link"><img src="/images/red-logo.svg"
-                alt="logo"></a>
+          <div class="navigation__top-content">
+            <div class="navigation__logo-block"><a href="#" class="navigation__logo-link"><img src="/images/red-logo.svg"
+                  alt="logo"></a>
+            </div>
+            <div class="navigation__links-wrapper">
+              <a href="#" class="navigation__links">About</a>
+              <a href="#" class="navigation__links">Pricing</a>
+              <a href="#" class="navigation__links">Company</a>
+              <a href="#" class="navigation__links">Blog</a>
+            </div>
           </div>
-          <a href="#" class="navigation__links">About</a>
-          <a href="#" class="navigation__links">Pricing</a>
-          <a href="#" class="navigation__links">Company</a>
-          <a href="#" class="navigation__links">Blog</a>
-          <div class="navigation__socmedia">
-            <a href="#" class="navigation__socmedia-links"><img src="/images/Facebook.svg" alt="Facebook"
-                class="navigation__socmedia-img"></a>
-            <a href="#" class="navigation__socmedia-links"><img src="/images/Linkedin.svg" alt="Linkedin"
-                class="navigation__socmedia-img"></a>
-            <a href="#" class="navigation__socmedia-links"><img src="/images/Google.svg" alt="Google"
-                class="navigation__socmedia-img"></a>
+          
+          <div class="navigation__bottom-content">
+            <div class="navigation__socmedia">
+              <a href="#" class="navigation__socmedia-links"><img src="/images/Facebook.svg" alt="Facebook"
+                  class="navigation__socmedia-img"></a>
+              <a href="#" class="navigation__socmedia-links"><img src="/images/Linkedin.svg" alt="Linkedin"
+                  class="navigation__socmedia-img"></a>
+              <a href="#" class="navigation__socmedia-links"><img src="/images/Google.svg" alt="Google"
+                  class="navigation__socmedia-img"></a>
+            </div>
+            <p class="navigation__copyright">Copyright © 2019</p>
           </div>
-          <p class="navigation__copyright">Copyright © 2019</p>
         </div>
       </div>
     </section>

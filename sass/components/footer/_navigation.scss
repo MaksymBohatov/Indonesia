@@ -5,6 +5,10 @@
   position: relative;
   padding: 155px 0 84px 0;
 
+  @media screen and (min-width: 1024px) {
+    padding: 39px 150px 31px 70px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -12,11 +16,35 @@
 
 
     gap: 36px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+    }
   }
 
-  &__logo-block {}
+  &__top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
 
-  &__logo-link {}
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 124px;
+    }
+  }
+
+  &__links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
 
   &__links {
     color: $neutral-white;
@@ -28,18 +56,42 @@
     line-height: 35.689px;
     /* 155.556% */
     letter-spacing: 0.637px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 50px;
+    }
   }
 
   &__socmedia {
     display: flex;
     gap: 48px;
-  }
 
-  &__socmedia-links {}
+    @media screen and (min-width: 1024px) {
+      gap: 22px;
+    }
+  }
 
   &__socmedia-img {
     width: 30.987px;
     height: 30.987px;
+
+    @media screen and (min-width: 1024px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__copyright {
@@ -52,6 +104,12 @@
     line-height: 36.152px;
     /* 155.556% */
     letter-spacing: 0.646px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;  
+      letter-spacing: 0.5px;
+    }
   }
 
 }
@@ -59,8 +117,15 @@
 .scroll-to-up {
   position: absolute;
   top: -41px;
-  left: 50%;
+  right: 50%;
   transform: translateX(-50%);
+
+  @media screen and (min-width: 1024px) {
+    right: 100px;
+    top: -52px;
+    transform: none;
+
+  }
 
   &__btn {
     background: none;

@@ -4,12 +4,20 @@
   background: $bg-header;
   padding: 40px 0 48px 0;
 
+  @media screen and (min-width: 1024px) {
+    padding: 207px 0 305px 0;
+  }
+
   &__main {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 56px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 192px;
+    }
   }
 
   &__card {
@@ -17,12 +25,21 @@
     flex-direction: column;
     align-items: center;
     gap: 34px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 130px;
+    }
   }
 
   &__card-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      align-items: start;
+    }
   }
 
   &__card-img {
@@ -30,6 +47,11 @@
 
     @media screen and (max-width: 426px) {
       width: 83.73vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 630.343px;
+      height: 460px;
     }
   }
 
@@ -47,6 +69,12 @@
     @media screen and (max-width: 426px) {
       font-size: 10.67vw;
     }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 42px;
+      line-height: 50px;
+      width: 479.501px;
+    }
   }
 
   &__card-descr {
@@ -63,6 +91,13 @@
     line-height: 24px;
     /* 150% */
     letter-spacing: 0.5px;
+
+    @media screen and (min-width: 1024px) {
+      width: 407.575px;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.18px;
+    }
   }
 
   &__card-btn {
@@ -71,7 +106,14 @@
     height: 72px;
     width: 100%;
     border: none;
+
+    @media screen and (min-width: 1024px) {
+      height: 59px;
+      width: 180px;
+      margin-top: 32px;
+    }
   }
+
   &__card-btn-txt {
     color: $neutral-white;
     text-align: center;
@@ -85,7 +127,21 @@
     /* 27px */
     transition: color 250ms linear;
   }
-    &__card-btn:hover > &__card-btn-txt {
-      color: $btn-hover;
+
+  &__card-btn:hover>&__card-btn-txt {
+    color: $btn-hover;
+  }
+
+  &__card-txt--order {
+    @media screen and (min-width: 1024px) {
+      order: -1;
     }
+
+  }
+
+  &__card-img--order {
+    @media screen and (min-width: 1024px) {
+      order: 2;
+    }
+  }
 }

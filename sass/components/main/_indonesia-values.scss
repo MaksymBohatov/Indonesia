@@ -4,6 +4,9 @@
   background: $dark-bg;
   padding: 72px 0 70px 0;
 
+  @media screen and (min-width: 1024px) {
+    padding: 200px 0 224px 0;
+  }
 
   &__content {
     display: flex;
@@ -19,11 +22,17 @@
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
+
     /* 115% */
     @media screen and (max-width: 426px) {
-        font-size: 10.67vw;
-        line-height: 12.27vw;
-      }
+      font-size: 10.67vw;
+      line-height: 12.27vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 60px;
+      line-height: 150%;
+    }
   }
 
   &__descr {
@@ -41,17 +50,33 @@
     letter-spacing: 0.5px;
 
     margin: 57px 0 15px 0;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 36px 0 39px 0;
+      width: 484px;
+    }
   }
 
   &__txt {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 90px ;
+    }
   }
 
   &__txt-block {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 18px;
+    }
   }
 
   &__value {
@@ -62,11 +87,18 @@
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
+
     /* 115% */
     @media screen and (max-width: 426px) {
-        font-size: 10.67vw;
-        line-height: 12.27vw;
-      }
+      font-size: 10.67vw;
+      line-height: 12.27vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 42.137px;
+      line-height: 49.16px;
+      letter-spacing: 0.386px;
+    }
   }
 
   &__txt-descr {
@@ -82,13 +114,23 @@
     line-height: 24px;
     /* 150% */
     letter-spacing: 0.5px;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 340px;
+    }
   }
 }
 
 .indonesia-values__txt> :nth-child(1) {
   margin-bottom: 80px;
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
 }
 
 .indonesia-values__txt> :nth-child(2) {
   margin-bottom: 43px;
+  @media screen and (min-width: 1024px) {
+    margin: 0;
+  }
 }

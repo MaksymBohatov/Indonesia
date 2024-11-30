@@ -12,6 +12,17 @@
     background-image: url(/images/mobile/canyon@mobile-2x.png);
   }
 
+  @media screen and (min-width: 1024px) {
+    background-image: url(/images/desktop/canyon@desktop-1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(/images/desktop/canyon@desktop-2x.png);
+    }
+  }
+
   position: relative;
   z-index: 1;
 
@@ -30,32 +41,40 @@
 
     @media screen and (min-width: 1024px) {
       position: absolute;
-      left: 40px;
-      top: 233px;
+      left: -323px;
+      top: 630px;
       z-index: 2;
       transform: rotate(-90deg);
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      column-gap: 239px;
     }
   }
 
   &__top-line {
     display: flex;
-    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  &__top-lines {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   &__slider-line {
+    display: block;
     background: $neutral-white;
     width: 296px;
     height: 2px;
   }
 
   &__slider-redline {
+    display: block;
     background: $main-red;
     width: 100px;
     height: 4px;
-    
+
   }
 
   &__slider-number {
@@ -70,9 +89,22 @@
     line-height: normal;
   }
 
-  &__slider-items {}
+  &__slider-items {
+    display: flex;
+    column-gap: 42px;
+  }
 
-  &__item {}
+  &__item {
+    color: $neutral-white;
+
+    /* Shadow Light */
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 
   &__top {
     display: flex;
@@ -80,7 +112,7 @@
     align-items: center;
     position: relative;
     z-index: 3;
-    padding: 48px 0 45px 0;
+    padding: 48px 0;
 
     @media screen and (min-width: 1024px) {
       gap: 78px;
@@ -92,6 +124,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
   }
@@ -148,12 +181,22 @@
     gap: 54px;
 
     padding-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+      align-items: start;
+      margin: 147px 0 0 277px;
+      padding-bottom: 451px;
+    }
   }
 
   &__intro-section {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 20px;
+    }
   }
 
   &__intro-title {
@@ -170,6 +213,15 @@
     @media screen and (max-width: 426px) {
       font-size: 15.51vw;
     }
+
+    @media screen and (min-width: 1024px) {
+      width: 627.327px;
+      font-size: 120px;
+      line-height: 130px;
+      text-transform: uppercase;
+
+      height: auto;
+    }
   }
 
   &__intro-btn {
@@ -179,6 +231,12 @@
 
     height: 59px;
     width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      border-radius: 211px;
+      width: 271px;
+      height: 82px;
+    }
   }
 
   &__intro-btn-txt {
@@ -194,10 +252,23 @@
     /* 27px */
 
     transition: color 250ms linear;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+    }
   }
 
   &__intro-btn:hover>&__intro-btn-txt {
     color: $btn-hover;
+  }
+
+  &__main-part-wrapper {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      position: absolute;
+      right: -30px;
+      bottom: 0;
+    }
   }
 
   &__descr {
@@ -208,12 +279,24 @@
     flex-direction: column;
     gap: 32px;
     padding: 35px 0 0 32px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      height: 210px;
+      align-self: self-end;
+      gap: 200px;
+      padding: 41px 128px 49px 71px;
+    }
   }
 
   &__articles-parts {
     display: flex;
     flex-direction: column;
     gap: 4px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 0;
+    }
   }
 
   &__article-number {
@@ -224,6 +307,10 @@
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 14px;
+    }
   }
 
   &__article-title {
@@ -252,6 +339,11 @@
     line-height: 24px;
     /* 150% */
     letter-spacing: 0.5px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__video-block {
@@ -260,12 +352,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   &__video {
     @media screen and (max-width: 426px) {
       width: 100%;
       height: 100%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 417.217px;
+      height: 254px;
     }
   }
 
@@ -287,6 +385,11 @@
     @media screen and (max-width: 426px) {
       width: 39.68vw;
       height: 15.95vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 148.816px;
+      height: 59.799px;
     }
   }
 }

@@ -5,6 +5,11 @@
   background-size: 100% auto;
   padding: 171px 0 116px 0;
 
+  @media screen and (min-width: 1024px) {
+    background: url(/images/desktop/lines-top-left.svg) left top no-repeat, url(/images/desktop/lines-right-bottom.svg) right bottom no-repeat;
+    padding: 250px 0 256px 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -18,12 +23,22 @@
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
-    
+
     /* 115% */
     @media screen and (max-width: 426px) {
-        font-size: 10.67vw;
-          line-height: 12.27vw;
+      font-size: 10.67vw;
+      line-height: 12.27vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+      @media screen and (min-width: 1024px) {
+        width: 614px;
+
+        font-size: 42px;
+        line-height: 50px;
       }
+    }
   }
 
   &__descr {
@@ -41,6 +56,14 @@
     letter-spacing: 0.5px;
 
     margin: 36px 0 41px 0;
+
+    @media screen and (min-width: 1024px) {
+      margin: 32px 0 36px 0;
+      width: 470px;
+
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 
   &__lernmore-btn {
@@ -49,7 +72,16 @@
     border: none;
     height: 73px;
     width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      height: 64px;
+      width: 210px;
+    }
   }
+
+    &__lernmore-btn:hover > &__btn-txt {
+      color: $btn-hover;
+    }
 
   &__btn-txt {
     color: $neutral-white;
@@ -62,6 +94,8 @@
     font-weight: 700;
     line-height: 150%;
     /* 27px */
+
+    transition: color 250ms linear;
   }
 }
 
